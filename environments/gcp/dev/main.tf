@@ -6,3 +6,15 @@ module "github_wif" {
   github_repository = "sentinel-multicloud-security"
   github_branch     = "main"
 }
+
+module "secure_network" {
+  source = "../../../modules/gcp/secure-network"
+
+  project_id = var.gcp_project_id
+  name       = "sentinel-dev"
+
+  region              = local.gcp_region
+  private_subnet_cidr = "10.20.0.0/20"
+  pods_cidr           = "10.24.0.0/20"
+  services_cidr       = "10.28.0.0/24"
+}

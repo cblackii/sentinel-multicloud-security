@@ -14,7 +14,17 @@ variable "region" {
 }
 
 variable "private_subnet_cidr" {
-  description = "CIDR block for the private GCP subnet."
+  description = "Primary CIDR block for the private GCP subnet."
+  type        = string
+}
+
+variable "pods_cidr" {
+  description = "Secondary CIDR range reserved for GKE pods."
+  type        = string
+}
+
+variable "services_cidr" {
+  description = "Secondary CIDR range reserved for GKE services."
   type        = string
 }
 
