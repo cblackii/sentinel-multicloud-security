@@ -18,3 +18,20 @@ module "secure_network" {
   pods_cidr           = "10.24.0.0/20"
   services_cidr       = "10.28.0.0/24"
 }
+
+module "gke" {
+  source = "../../../modules/gcp/gke"
+
+  project_id = var.gcp_project_id
+  name       = "sentinel-dev-gke"
+  region     = local.gcp_region
+
+  network    = module.secure_network.network_name
+  subnetwork = module.secure_network.subnet_name
+
+  pods_secondary_range_name     = module.secure_network.pods_secondary_range_name
+  services_secondary_range_name = module.secure_network.services_secondary_range_name
+
+  node_machine_type = "e2-standard-2"
+  node_count        = 1
+}
