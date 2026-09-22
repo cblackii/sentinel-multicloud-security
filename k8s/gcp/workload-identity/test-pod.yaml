@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sentinel-wif-test
+  namespace: default
+spec:
+  serviceAccountName: sentinel-demo
+  nodeSelector:
+    iam.gke.io/gke-metadata-server-enabled: "true"
+  containers:
+    - name: test
+      image: google/cloud-sdk:slim
+      command: ["/bin/sh", "-c"]
+      args:
+        - |
+          echo "SENTINEL Workload Identity test pod started."
+          sleep 3600

@@ -1,0 +1,2 @@
+NAME                 POD-SELECTOR    AGE
+restrict-hello-gke   app=hello-gke   12m

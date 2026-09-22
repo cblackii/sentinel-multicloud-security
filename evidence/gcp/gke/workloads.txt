@@ -1,0 +1,11 @@
+NAME                            READY   STATUS    RESTARTS   AGE   IP          NODE                                                  NOMINATED NODE   READINESS GATES
+pod/hello-gke-7b4bbc585-lcrvr   1/1     Running   0          77m   10.24.0.4   gke-sentinel-dev-gke-sentinel-dev-gke-7626669b-t6pg   <none>           <none>
+pod/network-client              1/1     Running   0          16m   10.24.0.5   gke-sentinel-dev-gke-sentinel-dev-gke-7626669b-t6pg   <none>           <none>
+pod/sentinel-wif-test           1/1     Running   0          42m   10.24.1.4   gke-sentinel-dev-gke-sentinel-dev-gke-252459a4-w4dg   <none>           <none>
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMAGES         SELECTOR
+deployment.apps/hello-gke   1/1     1            1           77m   hello-gke    nginx:alpine   app=hello-gke
+
+NAME                 TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE     SELECTOR
+service/hello-gke    ClusterIP   10.28.0.108   <none>        80/TCP    77m     app=hello-gke
+service/kubernetes   ClusterIP   10.28.0.1     <none>        443/TCP   3h55m   <none>
