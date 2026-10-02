@@ -1,0 +1,4 @@
+NAME                                                  STATUS   ROLES    AGE   VERSION               INTERNAL-IP   EXTERNAL-IP      OS-IMAGE                             KERNEL-VERSION   CONTAINER-RUNTIME
+gke-sentinel-dev-gke-sentinel-dev-gke-1bcdd0db-66xp   Ready    <none>   23m   v1.35.8-gke.1036000   10.20.0.11    136.66.199.183   Container-Optimized OS from Google   6.12.94+         containerd://2.2.7
+gke-sentinel-dev-gke-sentinel-dev-gke-50ec2b48-6lqx   Ready    <none>   23m   v1.35.8-gke.1036000   10.20.0.10    34.182.9.159     Container-Optimized OS from Google   6.12.94+         containerd://2.2.7
+gke-sentinel-dev-gke-sentinel-dev-gke-836b9358-1zn9   Ready    <none>   23m   v1.35.8-gke.1036000   10.20.0.9     35.252.69.90     Container-Optimized OS from Google   6.12.94+         containerd://2.2.7

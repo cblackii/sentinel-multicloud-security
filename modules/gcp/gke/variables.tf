@@ -44,3 +44,8 @@ variable "node_count" {
   type        = number
   default     = 1
 }
+
+variable "node_service_account_email" {
+  description = "Service account email used by GKE worker nodes."
+  type        = string
+}

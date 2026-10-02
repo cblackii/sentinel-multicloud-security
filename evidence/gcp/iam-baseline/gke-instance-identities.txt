@@ -1,0 +1,4 @@
+NAME                                                 ZONE        STATUS   EMAIL
+gke-sentinel-dev-gke-sentinel-dev-gke-836b9358-1zn9  us-west1-a  RUNNING  ['sentinel-gke-node@mid-sentinel-sbx.iam.gserviceaccount.com']
+gke-sentinel-dev-gke-sentinel-dev-gke-50ec2b48-6lqx  us-west1-b  RUNNING  ['sentinel-gke-node@mid-sentinel-sbx.iam.gserviceaccount.com']
+gke-sentinel-dev-gke-sentinel-dev-gke-1bcdd0db-66xp  us-west1-c  RUNNING  ['sentinel-gke-node@mid-sentinel-sbx.iam.gserviceaccount.com']

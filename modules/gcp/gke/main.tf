@@ -36,7 +36,8 @@ resource "google_container_node_pool" "primary" {
   node_count = var.node_count
 
   node_config {
-    machine_type = var.node_machine_type
+    machine_type    = var.node_machine_type
+    service_account = var.node_service_account_email
 
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"

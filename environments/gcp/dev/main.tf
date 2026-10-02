@@ -19,6 +19,12 @@ module "secure_network" {
   services_cidr       = "10.28.0.0/24"
 }
 
+module "iam_baseline" {
+  source = "../../../modules/gcp/iam-baseline"
+
+  project_id = var.gcp_project_id
+}
+
 module "gke" {
   source = "../../../modules/gcp/gke"
 
@@ -32,6 +38,7 @@ module "gke" {
   pods_secondary_range_name     = module.secure_network.pods_secondary_range_name
   services_secondary_range_name = module.secure_network.services_secondary_range_name
 
-  node_machine_type = "e2-standard-2"
-  node_count        = 1
+  node_machine_type          = "e2-standard-2"
+  node_count                 = 1
+  node_service_account_email = module.iam_baseline.gke_node_service_account_email
 }
