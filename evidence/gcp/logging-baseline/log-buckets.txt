@@ -1,0 +1,3 @@
+LOCATION  BUCKET_ID  RETENTION_DAYS  CMEK  RESTRICTED_FIELDS  INDEX_CONFIGS  LIFECYCLE_STATE  LOCKED  CREATE_TIME  UPDATE_TIME
+global    _Default   30                                                      ACTIVE
+global    _Required  400                                                     ACTIVE           True

@@ -25,6 +25,19 @@ module "iam_baseline" {
   project_id = var.gcp_project_id
 }
 
+module "logging_baseline" {
+  source = "../../../modules/gcp/logging-baseline"
+
+  project_id = var.gcp_project_id
+
+  data_access_services = [
+    "storage.googleapis.com",
+    "iam.googleapis.com",
+    "secretmanager.googleapis.com",
+    "container.googleapis.com",
+  ]
+}
+
 module "gke" {
   source = "../../../modules/gcp/gke"
 
