@@ -1,0 +1,4 @@
+NAME                                                  STATUS   ROLES    AGE   VERSION
+gke-sentinel-dev-gke-sentinel-dev-gke-1bcdd0db-66xp   Ready    <none>   44h   v1.35.8-gke.1036000
+gke-sentinel-dev-gke-sentinel-dev-gke-50ec2b48-6lqx   Ready    <none>   44h   v1.35.8-gke.1036000
+gke-sentinel-dev-gke-sentinel-dev-gke-836b9358-1zn9   Ready    <none>   44h   v1.35.8-gke.1036000

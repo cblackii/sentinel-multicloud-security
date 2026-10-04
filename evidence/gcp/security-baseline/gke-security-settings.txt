@@ -1,0 +1,6 @@
+binaryAuthorization:
+  evaluationMode: PROJECT_SINGLETON_POLICY_ENFORCE
+shieldedNodes:
+  enabled: true
+workloadIdentityConfig:
+  workloadPool: mid-sentinel-sbx.svc.id.goog

@@ -1,0 +1,5 @@
+NAME
+binaryauthorization.googleapis.com
+cloudkms.googleapis.com
+containeranalysis.googleapis.com
+secretmanager.googleapis.com

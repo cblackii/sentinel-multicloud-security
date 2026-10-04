@@ -38,6 +38,19 @@ module "logging_baseline" {
   ]
 }
 
+module "security_baseline" {
+  source = "../../../modules/gcp/security-baseline"
+
+  project_id = var.gcp_project_id
+
+  security_services = [
+    "secretmanager.googleapis.com",
+    "cloudkms.googleapis.com",
+    "containeranalysis.googleapis.com",
+    "binaryauthorization.googleapis.com",
+  ]
+}
+
 module "gke" {
   source = "../../../modules/gcp/gke"
 
