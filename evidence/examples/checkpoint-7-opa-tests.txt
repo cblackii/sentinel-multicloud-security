@@ -1,0 +1,47 @@
+===== SENTINEL CHECKPOINT 7 — OPA POLICY TESTS =====
+
+Version: 1.21.1
+Build Commit: 
+Build Timestamp: 
+Build Hostname: 
+Go Version: go1.27.1
+Platform: darwin/arm64
+Rego Version: v1
+WebAssembly: unavailable
+
+tests/policies/required_metadata_test.rego:35:
+data.sentinel.terraform.required_metadata_test.test_ignores_delete_only_changes: PASS (1.591792ms)
+
+tests/policies/broad_iam_test.rego:7:
+data.sentinel.terraform.broad_iam_test.test_blocks_gcp_primitive_role: PASS (2.28325ms)
+
+tests/policies/public_storage_test.rego:7:
+data.sentinel.terraform.public_storage_test.test_blocks_public_gcp_bucket_member: PASS (2.267209ms)
+tests/policies/public_storage_test.rego:14:
+data.sentinel.terraform.public_storage_test.test_blocks_gcp_bucket_without_public_access_prevention: PASS (2.583875ms)
+
+tests/policies/broad_iam_test.rego:25:
+data.sentinel.terraform.broad_iam_test.test_blocks_broad_aws_managed_policy: PASS (2.883209ms)
+
+tests/policies/public_storage_test.rego:32:
+data.sentinel.terraform.public_storage_test.test_allows_hardened_storage: PASS (3.009417ms)
+
+tests/policies/broad_iam_test.rego:14:
+data.sentinel.terraform.broad_iam_test.test_blocks_aws_wildcard_policy: PASS (3.643291ms)
+
+tests/policies/required_metadata_test.rego:7:
+data.sentinel.terraform.required_metadata_test.test_blocks_missing_gcp_labels: PASS (3.711042ms)
+
+tests/policies/broad_iam_test.rego:34:
+data.sentinel.terraform.broad_iam_test.test_allows_scoped_iam: PASS (3.733292ms)
+
+tests/policies/required_metadata_test.rego:15:
+data.sentinel.terraform.required_metadata_test.test_blocks_missing_aws_tags: PASS (3.793375ms)
+
+tests/policies/public_storage_test.rego:21:
+data.sentinel.terraform.public_storage_test.test_blocks_public_s3_policy: PASS (3.721792ms)
+
+tests/policies/required_metadata_test.rego:23:
+data.sentinel.terraform.required_metadata_test.test_allows_complete_metadata: PASS (3.863ms)
+--------------------------------------------------------------------------------
+PASS: 12/12
