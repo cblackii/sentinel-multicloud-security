@@ -22,7 +22,9 @@ module "secure_network" {
 module "iam_baseline" {
   source = "../../../modules/gcp/iam-baseline"
 
-  project_id = var.gcp_project_id
+  project_id                   = var.gcp_project_id
+  github_service_account_email = module.github_wif.service_account_email
+  terraform_state_bucket_name  = "sentinel-tfstate-988087918854"
 }
 
 module "logging_baseline" {
