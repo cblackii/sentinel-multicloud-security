@@ -48,6 +48,7 @@ module "security_baseline" {
   security_services = [
     "secretmanager.googleapis.com",
     "cloudkms.googleapis.com",
+    "cloudresourcemanager.googleapis.com",
     "containeranalysis.googleapis.com",
     "binaryauthorization.googleapis.com",
   ]
