@@ -7,6 +7,27 @@ The project currently implements a working **Google Cloud security platform** an
 > The goal is not simply to deploy cloud infrastructure. SENTINEL demonstrates how security controls can be engineered into the cloud platform, validated before deployment, and tied to auditable evidence.
 
 ---
+## Portfolio Snapshot
+
+| Area | Implementation |
+|---|---|
+| Cloud Platform | Google Cloud Platform |
+| Infrastructure as Code | Terraform |
+| Kubernetes | Regional GKE |
+| Network Security | Custom VPC, private subnet, VPC-native GKE, NetworkPolicy |
+| Identity | Least-privilege service accounts, GitHub OIDC/WIF, GKE Workload Identity |
+| Policy as Code | OPA / Rego |
+| CI/CD Security | GitHub Actions security gate and federated Terraform planning |
+| Supply Chain | Binary Authorization integration |
+| Auditability | Selective Cloud Audit Logs and collected security evidence |
+| Compliance Traceability | NIST SP 800-53, NIST SP 800-171, CMMC, CIS-aligned mappings |
+| Evidence Automation | Python evidence generator with SHA-256 integrity metadata |
+
+**Key outcome:** SENTINEL demonstrates how infrastructure provisioning, identity, Kubernetes security, preventive policy controls, CI/CD enforcement, and compliance evidence can operate as one repeatable cloud security engineering workflow.
+
+**Detailed architecture:** [`docs/architecture/sentinel-architecture.md`](docs/architecture/sentinel-architecture.md)
+
+**Generated security evidence:** [`evidence/generated/security-evidence-report.md`](evidence/generated/security-evidence-report.md)
 
 ## Project Goals
 
